@@ -1,4 +1,5 @@
 from tkinter import*
+from time import sleep
 
 #==================================================================================================================================================================
 # Description : Ouvre la page d'accueil du jeu.
@@ -50,205 +51,305 @@ def wipeCanvas():
 #==================================================================================================================================================================
 def grid():
    global middleFrame
-   buttonA1 = Button(middleFrame, height = 2, width = 4, text = "A1", command = boat(1))
+   global buttonA1
+   global buttonA2
+   global buttonA3
+   global buttonA4
+   global buttonA5
+   global buttonA6
+   global buttonA7
+   global buttonA8
+   global buttonA9
+   global buttonA10
+   global buttonB1
+   global buttonB2
+   global buttonB3
+   global buttonB4
+   global buttonB5
+   global buttonB6
+   global buttonB7
+   global buttonB8
+   global buttonB9
+   global buttonB10
+   global buttonC1
+   global buttonC2
+   global buttonC3
+   global buttonC4
+   global buttonC5
+   global buttonC6
+   global buttonC7
+   global buttonC8
+   global buttonC9
+   global buttonC10
+   global buttonD1
+   global buttonD2
+   global buttonD3
+   global buttonD4
+   global buttonD5
+   global buttonD6
+   global buttonD7
+   global buttonD8
+   global buttonD9
+   global buttonD10
+   global buttonE1
+   global buttonE2
+   global buttonE3
+   global buttonE4
+   global buttonE5
+   global buttonE6
+   global buttonE7
+   global buttonE8
+   global buttonE9
+   global buttonE10
+   global buttonF1
+   global buttonF2
+   global buttonF3
+   global buttonF4
+   global buttonF5
+   global buttonF6
+   global buttonF7
+   global buttonF8
+   global buttonF9
+   global buttonF10
+   global buttonG1
+   global buttonG2
+   global buttonG3
+   global buttonG4
+   global buttonG5
+   global buttonG6
+   global buttonG7
+   global buttonG8
+   global buttonG9
+   global buttonG10
+   global buttonH1
+   global buttonH2
+   global buttonH3
+   global buttonH4
+   global buttonH5
+   global buttonH6
+   global buttonH7
+   global buttonH8
+   global buttonH9
+   global buttonH10
+   global buttonI1
+   global buttonI2
+   global buttonI3
+   global buttonI4
+   global buttonI5
+   global buttonI6
+   global buttonI7
+   global buttonI8
+   global buttonI9
+   global buttonI10
+   global buttonJ1
+   global buttonJ2
+   global buttonJ3
+   global buttonJ4
+   global buttonJ5
+   global buttonJ6
+   global buttonJ7
+   global buttonJ8
+   global buttonJ9
+   global buttonJ10
+   buttonA1 = Button(middleFrame, height = 2, width = 4, text = "A1", command = lambda : boat(1))
    buttonA1.grid(row = 1, column = 1)
-   buttonA2 = Button(middleFrame, height = 2, width = 4, text = "A2", command = boat(2))
+   buttonA2 = Button(middleFrame, height = 2, width = 4, text = "A2", command = lambda : boat(2))
    buttonA2.grid(row = 1, column = 2)
-   buttonA3 = Button(middleFrame, height = 2, width = 4, text = "A3", command = boat(3))
+   buttonA3 = Button(middleFrame, height = 2, width = 4, text = "A3", command = lambda : boat(3))
    buttonA3.grid(row = 1, column = 3)
-   buttonA4 = Button(middleFrame, height = 2, width = 4, text = "A4", command = boat(4))
+   buttonA4 = Button(middleFrame, height = 2, width = 4, text = "A4", command = lambda : boat(4))
    buttonA4.grid(row = 1, column = 4)
-   buttonA5 = Button(middleFrame, height = 2, width = 4, text = "A5", command = boat(5))
+   buttonA5 = Button(middleFrame, height = 2, width = 4, text = "A5", command = lambda : boat(5))
    buttonA5.grid(row = 1, column = 5)
-   buttonA6 = Button(middleFrame, height = 2, width = 4, text = "A6", command = boat(6))
+   buttonA6 = Button(middleFrame, height = 2, width = 4, text = "A6", command = lambda : boat(6))
    buttonA6.grid(row = 1, column = 6)
-   buttonA7 = Button(middleFrame, height = 2, width = 4, text = "A7", command = boat(7))
+   buttonA7 = Button(middleFrame, height = 2, width = 4, text = "A7", command = lambda : boat(7))
    buttonA7.grid(row = 1, column = 7)
-   buttonA8 = Button(middleFrame, height = 2, width = 4, text = "A8", command = boat(8))
+   buttonA8 = Button(middleFrame, height = 2, width = 4, text = "A8", command = lambda : boat(8))
    buttonA8.grid(row = 1, column = 8)
-   buttonA9 = Button(middleFrame, height = 2, width = 4, text = "A9", command = boat(9))
+   buttonA9 = Button(middleFrame, height = 2, width = 4, text = "A9", command = lambda : boat(9))
    buttonA9.grid(row = 1, column = 9)
-   buttonA10 = Button(middleFrame, height = 2, width = 4, text = "A10", command = boat(10))
+   buttonA10 = Button(middleFrame, height = 2, width = 4, text = "A10", command = lambda : boat(10))
    buttonA10.grid(row = 1, column = 10)
-   buttonB1 = Button(middleFrame, height = 2, width = 4, text = "B1", command = boat(11))
+   buttonB1 = Button(middleFrame, height = 2, width = 4, text = "B1", command = lambda : boat(11))
    buttonB1.grid(row = 2, column = 1)
-   buttonB2 = Button(middleFrame, height = 2, width = 4, text = "B2", command = boat(12))
+   buttonB2 = Button(middleFrame, height = 2, width = 4, text = "B2", command = lambda : boat(12))
    buttonB2.grid(row = 2, column = 2)
-   buttonB3 = Button(middleFrame, height = 2, width = 4, text = "B3", command = boat(13))
+   buttonB3 = Button(middleFrame, height = 2, width = 4, text = "B3", command = lambda : boat(13))
    buttonB3.grid(row = 2, column = 3)
-   buttonB4 = Button(middleFrame, height = 2, width = 4, text = "B4", command = boat(14))
+   buttonB4 = Button(middleFrame, height = 2, width = 4, text = "B4", command = lambda : boat(14))
    buttonB4.grid(row = 2, column = 4)
-   buttonB5 = Button(middleFrame, height = 2, width = 4, text = "B5", command = boat(15))
+   buttonB5 = Button(middleFrame, height = 2, width = 4, text = "B5", command = lambda : boat(15))
    buttonB5.grid(row = 2, column = 5)
-   buttonB6 = Button(middleFrame, height = 2, width = 4, text = "B6", command = boat(16))
+   buttonB6 = Button(middleFrame, height = 2, width = 4, text = "B6", command = lambda : boat(16))
    buttonB6.grid(row = 2, column = 6)
-   buttonB7 = Button(middleFrame, height = 2, width = 4, text = "B7", command = boat(17))
+   buttonB7 = Button(middleFrame, height = 2, width = 4, text = "B7", command = lambda : boat(17))
    buttonB7.grid(row = 2, column = 7)
-   buttonB8 = Button(middleFrame, height = 2, width = 4, text = "B8", command = boat(18))
+   buttonB8 = Button(middleFrame, height = 2, width = 4, text = "B8", command = lambda : boat(18))
    buttonB8.grid(row = 2, column = 8)
-   buttonB9 = Button(middleFrame, height = 2, width = 4, text = "B9", command = boat(19))
+   buttonB9 = Button(middleFrame, height = 2, width = 4, text = "B9", command = lambda : boat(19))
    buttonB9.grid(row = 2, column = 9)
-   buttonB10 = Button(middleFrame, height = 2, width = 4, text = "B10", command = boat(20))
+   buttonB10 = Button(middleFrame, height = 2, width = 4, text = "B10", command = lambda : boat(20))
    buttonB10.grid(row = 2, column = 10)
-   buttonC1 = Button(middleFrame, height = 2, width = 4, text = "C1", command = boat(21))
+   buttonC1 = Button(middleFrame, height = 2, width = 4, text = "C1", command = lambda : boat(21))
    buttonC1.grid(row = 3, column = 1)
-   buttonC2 = Button(middleFrame, height = 2, width = 4, text = "C2", command = boat(22))
+   buttonC2 = Button(middleFrame, height = 2, width = 4, text = "C2", command = lambda : boat(22))
    buttonC2.grid(row = 3, column = 2)
-   buttonC3 = Button(middleFrame, height = 2, width = 4, text = "C3", command = boat(23))
+   buttonC3 = Button(middleFrame, height = 2, width = 4, text = "C3", command = lambda : boat(23))
    buttonC3.grid(row = 3, column = 3)
-   buttonC4 = Button(middleFrame, height = 2, width = 4, text = "C4", command = boat(24))
+   buttonC4 = Button(middleFrame, height = 2, width = 4, text = "C4", command = lambda : boat(24))
    buttonC4.grid(row = 3, column = 4)
-   buttonC5 = Button(middleFrame, height = 2, width = 4, text = "C5", command = boat(25))
+   buttonC5 = Button(middleFrame, height = 2, width = 4, text = "C5", command = lambda : boat(25))
    buttonC5.grid(row = 3, column = 5)
-   buttonC6 = Button(middleFrame, height = 2, width = 4, text = "C6", command = boat(26))
+   buttonC6 = Button(middleFrame, height = 2, width = 4, text = "C6", command = lambda : boat(26))
    buttonC6.grid(row = 3, column = 6)
-   buttonC7 = Button(middleFrame, height = 2, width = 4, text = "C7", command = boat(27))
+   buttonC7 = Button(middleFrame, height = 2, width = 4, text = "C7", command = lambda : boat(27))
    buttonC7.grid(row = 3, column = 7)
-   buttonC8 = Button(middleFrame, height = 2, width = 4, text = "C8", command = boat(28))
+   buttonC8 = Button(middleFrame, height = 2, width = 4, text = "C8", command = lambda : boat(28))
    buttonC8.grid(row = 3, column = 8)
-   buttonC9 = Button(middleFrame, height = 2, width = 4, text = "C9", command = boat(29))
+   buttonC9 = Button(middleFrame, height = 2, width = 4, text = "C9", command = lambda : boat(29))
    buttonC9.grid(row = 3, column = 9)
-   buttonC10 = Button(middleFrame, height = 2, width = 4, text = "C10", command = boat(30))
+   buttonC10 = Button(middleFrame, height = 2, width = 4, text = "C10", command = lambda : boat(30))
    buttonC10.grid(row = 3, column = 10)
-   buttonD1 = Button(middleFrame, height = 2, width = 4, text = "D1", command = boat(31))
+   buttonD1 = Button(middleFrame, height = 2, width = 4, text = "D1", command = lambda : boat(31))
    buttonD1.grid(row = 4, column = 1)
-   buttonD2 = Button(middleFrame, height = 2, width = 4, text = "D2", command = boat(32))
+   buttonD2 = Button(middleFrame, height = 2, width = 4, text = "D2", command = lambda : boat(32))
    buttonD2.grid(row = 4, column = 2)
-   buttonD3 = Button(middleFrame, height = 2, width = 4, text = "D3", command = boat(33))
+   buttonD3 = Button(middleFrame, height = 2, width = 4, text = "D3", command = lambda : boat(33))
    buttonD3.grid(row = 4, column = 3)
-   buttonD4 = Button(middleFrame, height = 2, width = 4, text = "D4", command = boat(34))
+   buttonD4 = Button(middleFrame, height = 2, width = 4, text = "D4", command = lambda : boat(34))
    buttonD4.grid(row = 4, column = 4)
-   buttonD5 = Button(middleFrame, height = 2, width = 4, text = "D5", command = boat(35))
+   buttonD5 = Button(middleFrame, height = 2, width = 4, text = "D5", command = lambda : boat(35))
    buttonD5.grid(row = 4, column = 5)
-   buttonD6 = Button(middleFrame, height = 2, width = 4, text = "D6", command = boat(36))
+   buttonD6 = Button(middleFrame, height = 2, width = 4, text = "D6", command = lambda : boat(36))
    buttonD6.grid(row = 4, column = 6)
-   buttonD7 = Button(middleFrame, height = 2, width = 4, text = "D7", command = boat(37))
+   buttonD7 = Button(middleFrame, height = 2, width = 4, text = "D7", command = lambda : boat(37))
    buttonD7.grid(row = 4, column = 7)
-   buttonD8 = Button(middleFrame, height = 2, width = 4, text = "D8", command = boat(38))
+   buttonD8 = Button(middleFrame, height = 2, width = 4, text = "D8", command = lambda : boat(38))
    buttonD8.grid(row = 4, column = 8)
-   buttonD9 = Button(middleFrame, height = 2, width = 4, text = "D9", command = boat(39))
+   buttonD9 = Button(middleFrame, height = 2, width = 4, text = "D9", command = lambda : boat(39))
    buttonD9.grid(row = 4, column = 9)
-   buttonD10 = Button(middleFrame, height = 2, width = 4, text = "D10", command = boat(40))
+   buttonD10 = Button(middleFrame, height = 2, width = 4, text = "D10", command = lambda : boat(40))
    buttonD10.grid(row = 4, column = 10)
-   buttonE1 = Button(middleFrame, height = 2, width = 4, text = "E1", command = boat(41))
+   buttonE1 = Button(middleFrame, height = 2, width = 4, text = "E1", command = lambda : boat(41))
    buttonE1.grid(row = 5, column = 1)
-   buttonE2 = Button(middleFrame, height = 2, width = 4, text = "E2", command = boat(42))
+   buttonE2 = Button(middleFrame, height = 2, width = 4, text = "E2", command = lambda : boat(42))
    buttonE2.grid(row = 5, column = 2)
-   buttonE3 = Button(middleFrame, height = 2, width = 4, text = "E3", command = boat(43))
+   buttonE3 = Button(middleFrame, height = 2, width = 4, text = "E3", command = lambda : boat(43))
    buttonE3.grid(row = 5, column = 3)
-   buttonE4 = Button(middleFrame, height = 2, width = 4, text = "E4", command = boat(44))
+   buttonE4 = Button(middleFrame, height = 2, width = 4, text = "E4", command = lambda : boat(44))
    buttonE4.grid(row = 5, column = 4)
-   buttonE5 = Button(middleFrame, height = 2, width = 4, text = "E5", command = boat(45))
+   buttonE5 = Button(middleFrame, height = 2, width = 4, text = "E5", command = lambda : boat(45))
    buttonE5.grid(row = 5, column = 5)
-   buttonE6 = Button(middleFrame, height = 2, width = 4, text = "E6", command = boat(46))
+   buttonE6 = Button(middleFrame, height = 2, width = 4, text = "E6", command = lambda : boat(46))
    buttonE6.grid(row = 5, column = 6)
-   buttonE7 = Button(middleFrame, height = 2, width = 4, text = "E7", command = boat(47))
+   buttonE7 = Button(middleFrame, height = 2, width = 4, text = "E7", command = lambda : boat(47))
    buttonE7.grid(row = 5, column = 7)
-   buttonE8 = Button(middleFrame, height = 2, width = 4, text = "E8", command = boat(48))
+   buttonE8 = Button(middleFrame, height = 2, width = 4, text = "E8", command = lambda : boat(48))
    buttonE8.grid(row = 5, column = 8)
-   buttonE9 = Button(middleFrame, height = 2, width = 4, text = "E9", command = boat(49))
+   buttonE9 = Button(middleFrame, height = 2, width = 4, text = "E9", command = lambda : boat(49))
    buttonE9.grid(row = 5, column = 9)
-   buttonE10 = Button(middleFrame, height = 2, width = 4, text = "E10", command = boat(50))
+   buttonE10 = Button(middleFrame, height = 2, width = 4, text = "E10", command = lambda : boat(50))
    buttonE10.grid(row = 5, column = 10)
-   buttonF1 = Button(middleFrame, height = 2, width = 4, text = "F1", command = boat(51))
+   buttonF1 = Button(middleFrame, height = 2, width = 4, text = "F1", command = lambda : boat(51))
    buttonF1.grid(row = 6, column = 1)
-   buttonF2 = Button(middleFrame, height = 2, width = 4, text = "F2", command = boat(52))
+   buttonF2 = Button(middleFrame, height = 2, width = 4, text = "F2", command = lambda : boat(52))
    buttonF2.grid(row = 6, column = 2)
-   buttonF3 = Button(middleFrame, height = 2, width = 4, text = "F3", command = boat(53))
+   buttonF3 = Button(middleFrame, height = 2, width = 4, text = "F3", command = lambda : boat(53))
    buttonF3.grid(row = 6, column = 3)
-   buttonF4 = Button(middleFrame, height = 2, width = 4, text = "F4", command = boat(54))
+   buttonF4 = Button(middleFrame, height = 2, width = 4, text = "F4", command = lambda : boat(54))
    buttonF4.grid(row = 6, column = 4)
-   buttonF5 = Button(middleFrame, height = 2, width = 4, text = "F5", command = boat(55))
+   buttonF5 = Button(middleFrame, height = 2, width = 4, text = "F5", command = lambda : boat(55))
    buttonF5.grid(row = 6, column = 5)
-   buttonF6 = Button(middleFrame, height = 2, width = 4, text = "F6", command = boat(56))
+   buttonF6 = Button(middleFrame, height = 2, width = 4, text = "F6", command = lambda : boat(56))
    buttonF6.grid(row = 6, column = 6)
-   buttonF7 = Button(middleFrame, height = 2, width = 4, text = "F7", command = boat(57))
+   buttonF7 = Button(middleFrame, height = 2, width = 4, text = "F7", command = lambda : boat(57))
    buttonF7.grid(row = 6, column = 7)
-   buttonF8 = Button(middleFrame, height = 2, width = 4, text = "F8", command = boat(58))
+   buttonF8 = Button(middleFrame, height = 2, width = 4, text = "F8", command = lambda : boat(58))
    buttonF8.grid(row = 6, column = 8)
-   buttonF9 = Button(middleFrame, height = 2, width = 4, text = "F9", command = boat(59))
+   buttonF9 = Button(middleFrame, height = 2, width = 4, text = "F9", command = lambda : boat(59))
    buttonF9.grid(row = 6, column = 9)
-   buttonF10 = Button(middleFrame, height = 2, width = 4, text = "F10", command = boat(60))
+   buttonF10 = Button(middleFrame, height = 2, width = 4, text = "F10", command = lambda : boat(60))
    buttonF10.grid(row = 6, column = 10)
-   buttonG1 = Button(middleFrame, height = 2, width = 4, text = "G1", command = boat(61))
+   buttonG1 = Button(middleFrame, height = 2, width = 4, text = "G1", command = lambda : boat(61))
    buttonG1.grid(row = 7, column = 1)
-   buttonG2 = Button(middleFrame, height = 2, width = 4, text = "G2", command = boat(62))
+   buttonG2 = Button(middleFrame, height = 2, width = 4, text = "G2", command = lambda : boat(62))
    buttonG2.grid(row = 7, column = 2)
-   buttonG3 = Button(middleFrame, height = 2, width = 4, text = "G3", command = boat(63))
+   buttonG3 = Button(middleFrame, height = 2, width = 4, text = "G3", command = lambda : boat(63))
    buttonG3.grid(row = 7, column = 3)
-   buttonG4 = Button(middleFrame, height = 2, width = 4, text = "G4", command = boat(64))
+   buttonG4 = Button(middleFrame, height = 2, width = 4, text = "G4", command = lambda : boat(64))
    buttonG4.grid(row = 7, column = 4)
-   buttonG5 = Button(middleFrame, height = 2, width = 4, text = "G5", command = boat(65))
+   buttonG5 = Button(middleFrame, height = 2, width = 4, text = "G5", command = lambda : boat(65))
    buttonG5.grid(row = 7, column = 5)
-   buttonG6 = Button(middleFrame, height = 2, width = 4, text = "G6", command = boat(66))
+   buttonG6 = Button(middleFrame, height = 2, width = 4, text = "G6", command = lambda : boat(66))
    buttonG6.grid(row = 7, column = 6)
-   buttonG7 = Button(middleFrame, height = 2, width = 4, text = "G7", command = boat(67))
+   buttonG7 = Button(middleFrame, height = 2, width = 4, text = "G7", command = lambda : boat(67))
    buttonG7.grid(row = 7, column = 7)
-   buttonG8 = Button(middleFrame, height = 2, width = 4, text = "G8", command = boat(68))
+   buttonG8 = Button(middleFrame, height = 2, width = 4, text = "G8", command = lambda : boat(68))
    buttonG8.grid(row = 7, column = 8)
-   buttonG9 = Button(middleFrame, height = 2, width = 4, text = "G9", command = boat(69))
+   buttonG9 = Button(middleFrame, height = 2, width = 4, text = "G9", command = lambda : boat(69))
    buttonG9.grid(row = 7, column = 9)
-   buttonG10 = Button(middleFrame, height = 2, width = 4, text = "G10", command = boat(70))
+   buttonG10 = Button(middleFrame, height = 2, width = 4, text = "G10", command = lambda : boat(70))
    buttonG10.grid(row = 7, column = 10)
-   buttonH1 = Button(middleFrame, height = 2, width = 4, text = "H1", command = boat(71))
+   buttonH1 = Button(middleFrame, height = 2, width = 4, text = "H1", command = lambda : boat(71))
    buttonH1.grid(row = 8, column = 1)
-   buttonH2 = Button(middleFrame, height = 2, width = 4, text = "H2", command = boat(72))
+   buttonH2 = Button(middleFrame, height = 2, width = 4, text = "H2", command = lambda : boat(72))
    buttonH2.grid(row = 8, column = 2)
-   buttonH3 = Button(middleFrame, height = 2, width = 4, text = "H3", command = boat(73))
+   buttonH3 = Button(middleFrame, height = 2, width = 4, text = "H3", command = lambda : boat(73))
    buttonH3.grid(row = 8, column = 3)
-   buttonH4 = Button(middleFrame, height = 2, width = 4, text = "H4", command = boat(74))
+   buttonH4 = Button(middleFrame, height = 2, width = 4, text = "H4", command = lambda : boat(74))
    buttonH4.grid(row = 8, column = 4)
-   buttonH5 = Button(middleFrame, height = 2, width = 4, text = "H5", command = boat(75))
+   buttonH5 = Button(middleFrame, height = 2, width = 4, text = "H5", command = lambda : boat(75))
    buttonH5.grid(row = 8, column = 5)
-   buttonH6 = Button(middleFrame, height = 2, width = 4, text = "H6", command = boat(76))
+   buttonH6 = Button(middleFrame, height = 2, width = 4, text = "H6", command = lambda : boat(76))
    buttonH6.grid(row = 8, column = 6)
-   buttonH7 = Button(middleFrame, height = 2, width = 4, text = "H7", command = boat(77))
+   buttonH7 = Button(middleFrame, height = 2, width = 4, text = "H7", command = lambda : boat(77))
    buttonH7.grid(row = 8, column = 7)
-   buttonH8 = Button(middleFrame, height = 2, width = 4, text = "H8", command = boat(78))
+   buttonH8 = Button(middleFrame, height = 2, width = 4, text = "H8", command = lambda : boat(78))
    buttonH8.grid(row = 8, column = 8)
-   buttonH9 = Button(middleFrame, height = 2, width = 4, text = "H9", command = boat(79))
+   buttonH9 = Button(middleFrame, height = 2, width = 4, text = "H9", command = lambda : boat(79))
    buttonH9.grid(row = 8, column = 9)
-   buttonH10 = Button(middleFrame, height = 2, width = 4, text = "H10", command = boat(80))
+   buttonH10 = Button(middleFrame, height = 2, width = 4, text = "H10", command = lambda : boat(80))
    buttonH10.grid(row = 8, column = 10)
-   buttonI1 = Button(middleFrame, height = 2, width = 4, text = "I1", command = boat(81))
+   buttonI1 = Button(middleFrame, height = 2, width = 4, text = "I1", command = lambda : boat(81))
    buttonI1.grid(row = 9, column = 1)
-   buttonI2 = Button(middleFrame, height = 2, width = 4, text = "I2", command = boat(82))
+   buttonI2 = Button(middleFrame, height = 2, width = 4, text = "I2", command = lambda : boat(82))
    buttonI2.grid(row = 9, column = 2)
-   buttonI3 = Button(middleFrame, height = 2, width = 4, text = "I3", command = boat(83))
+   buttonI3 = Button(middleFrame, height = 2, width = 4, text = "I3", command = lambda : boat(83))
    buttonI3.grid(row = 9, column = 3)
-   buttonI4 = Button(middleFrame, height = 2, width = 4, text = "I4", command = boat(84))
+   buttonI4 = Button(middleFrame, height = 2, width = 4, text = "I4", command = lambda : boat(84))
    buttonI4.grid(row = 9, column = 4)
-   buttonI5 = Button(middleFrame, height = 2, width = 4, text = "I5", command = boat(85))
+   buttonI5 = Button(middleFrame, height = 2, width = 4, text = "I5", command = lambda : boat(85))
    buttonI5.grid(row = 9, column = 5)
-   buttonI6 = Button(middleFrame, height = 2, width = 4, text = "I6", command = boat(86))
+   buttonI6 = Button(middleFrame, height = 2, width = 4, text = "I6", command = lambda : boat(86))
    buttonI6.grid(row = 9, column = 6)
-   buttonI7 = Button(middleFrame, height = 2, width = 4, text = "I7", command = boat(87))
+   buttonI7 = Button(middleFrame, height = 2, width = 4, text = "I7", command = lambda : boat(87))
    buttonI7.grid(row = 9, column = 7)
-   buttonI8 = Button(middleFrame, height = 2, width = 4, text = "I8", command = boat(88))
+   buttonI8 = Button(middleFrame, height = 2, width = 4, text = "I8", command = lambda : boat(88))
    buttonI8.grid(row = 9, column = 8)
-   buttonI9 = Button(middleFrame, height = 2, width = 4, text = "I9", command = boat(89))
+   buttonI9 = Button(middleFrame, height = 2, width = 4, text = "I9", command = lambda : boat(89))
    buttonI9.grid(row = 9, column = 9)
-   buttonI10 = Button(middleFrame, height = 2, width = 4, text = "I10", command = boat(90))
+   buttonI10 = Button(middleFrame, height = 2, width = 4, text = "I10", command = lambda : boat(90))
    buttonI10.grid(row = 9, column = 10)
-   buttonJ1 = Button(middleFrame, height = 2, width = 4, text = "J1", command = boat(91))
+   buttonJ1 = Button(middleFrame, height = 2, width = 4, text = "J1", command = lambda : boat(91))
    buttonJ1.grid(row = 10, column = 1)
-   buttonJ2 = Button(middleFrame, height = 2, width = 4, text = "J2", command = boat(92))
+   buttonJ2 = Button(middleFrame, height = 2, width = 4, text = "J2", command = lambda : boat(92))
    buttonJ2.grid(row = 10, column = 2)
-   buttonJ3 = Button(middleFrame, height = 2, width = 4, text = "J3", command = boat(93))
+   buttonJ3 = Button(middleFrame, height = 2, width = 4, text = "J3", command = lambda : boat(93))
    buttonJ3.grid(row = 10, column = 3)
-   buttonJ4 = Button(middleFrame, height = 2, width = 4, text = "J4", command = boat(94))
+   buttonJ4 = Button(middleFrame, height = 2, width = 4, text = "J4", command = lambda : boat(94))
    buttonJ4.grid(row = 10, column = 4)
-   buttonJ5 = Button(middleFrame, height = 2, width = 4, text = "J5", command = boat(95))
+   buttonJ5 = Button(middleFrame, height = 2, width = 4, text = "J5", command = lambda : boat(95))
    buttonJ5.grid(row = 10, column = 5)
-   buttonJ6 = Button(middleFrame, height = 2, width = 4, text = "J6", command = boat(96))
+   buttonJ6 = Button(middleFrame, height = 2, width = 4, text = "J6", command = lambda : boat(96))
    buttonJ6.grid(row = 10, column = 6)
-   buttonJ7 = Button(middleFrame, height = 2, width = 4, text = "J7", command = boat(97))
+   buttonJ7 = Button(middleFrame, height = 2, width = 4, text = "J7", command = lambda : boat(97))
    buttonJ7.grid(row = 10, column = 7)
-   buttonJ8 = Button(middleFrame, height = 2, width = 4, text = "J8", command = boat(98))
+   buttonJ8 = Button(middleFrame, height = 2, width = 4, text = "J8", command = lambda : boat(98))
    buttonJ8.grid(row = 10, column = 8)
-   buttonJ9 = Button(middleFrame, height = 2, width = 4, text = "J9", command = boat(99))
+   buttonJ9 = Button(middleFrame, height = 2, width = 4, text = "J9", command = lambda : boat(99))
    buttonJ9.grid(row = 10, column = 9)
-   buttonJ10 = Button(middleFrame, height = 2, width = 4, text = "J10", command = boat(100))
+   buttonJ10 = Button(middleFrame, height = 2, width = 4, text = "J10", command = lambda : boat(100))
    buttonJ10.grid(row = 10, column = 10)
 
 #==================================================================================================================================================================
@@ -260,47 +361,281 @@ def bateauxJoueur():
    wipeCanvas()
    global middleFrame
    global value
-   value = int()
+   global boatSquares
+   global sens
+   global whichBoat
+   sens = int()
    middleFrame = Frame(mainCanvas, bg = 'DodgerBlue1')
    middleFrame.pack(side = 'bottom', padx = 50, pady = 50)
-   label1 = Label(mainCanvas, text = "Veuillez placer vos bateaux.", bg = "red")
+   label1 = Label(mainCanvas, text = "Veuillez placer vos bateaux.", bg = "yellow")
    label1.pack(side = 'top', padx = 200, pady = 5)
-   label2 = Label(mainCanvas, text = "Pour chaque bateaux, choissisez d'abord le sens puis cliquez sur la case sur laquelle le bateaux débutera.", bg = "red")
+   label2 = Label(mainCanvas, text = "Pour chaque bateaux, choissisez d'abord le sens puis cliquez sur la case sur laquelle le bateaux débutera.", bg = "yellow")
    label2.pack(side = 'top', padx = 200, pady = 5)
-   horizontal = Radiobutton(mainCanvas, text = "horizontal", variable = value, value = 1)
+   horizontal = Button(mainCanvas, text = "Horizontal", command=sensHorizontal)
    horizontal.pack(side = 'top', padx = 200, pady = 5)
-   vertical = Radiobutton(mainCanvas, text = "vertical", variable = value, value = 10)
+   vertical = Button(mainCanvas, text = "Vertical",  command=sensVertical)
    vertical.pack(side = 'top', padx = 200, pady = 5)
-   global whichBoat
    whichBoat = 1
    consigne()
+   boatSquares = str()
    grid()
-   
+
+#==================================================================================================================================================================
+# Description : Affecte le sens du bateau, à l'horizontale.
+# Entrée : Le bouton Horizontale.
+# Sortie : La variable sens prend la valeur 1.
+#==================================================================================================================================================================
+def sensHorizontal():
+   global sens
+   sens = 1
+
+#==================================================================================================================================================================
+# Description : Affecte le sens du bateau, à la verticale.
+# Entrée : Le bouton Verticale.
+# Sortie : La variable sens prend la valeur 10.
+#==================================================================================================================================================================
+def sensVertical():
+   global sens
+   sens = 10
+
 #==================================================================================================================================================================
 # Description : Sauvegarde les emplacements que le joueur choisira.
 # Entrée : La grille de boutons.
-# Sortie : Cases où les bateaux seront, en liste de caractères
+# Sortie : Cases où les bateaux seront, en liste de caractères.
 #==================================================================================================================================================================
 def boat(firstSquare):
    global boatSquares
-   boatSquares = str()
+   global sens
    squareBySquare = firstSquare
    caseBateau = "/" + str(squareBySquare) + "/"
-   n = 1
-   while caseBateau in boatSquares == False and n != numDeCases:
+   label4 = Label(mainCanvas, text = "Désolé vous avez fait une erreur, veuillez recommencer", bg = "yellow")
+   error = True
+   for loop in range(numDeCases):
       boatSquares = boatSquares + caseBateau
-      squareBySquare = squareBySquare + value
+      squareBySquare = squareBySquare + sens
       caseBateau = "/" + str(squareBySquare) + "/"
-      n = n + 1
-   if n != numDeCases + 1:
+      loop = loop + 1
+      if caseBateau in boatSquares:
+         error = False
+         whichBoat = 1
+         label4.pack(side = 'top', padx = 200, pady = 5)
+   if error:
+      colorChange()
+      label4.destroy()
       consigne()
 
+#==================================================================================================================================================================
+# Description : Met en couleur l'emplacement des bateaux.
+# Entrée : La variable boatSquares.
+# Sortie : les boutons changent de couleur.
+#==================================================================================================================================================================
+def colorChange():
+   if "/1/" in boatSquares:
+      buttonA1.configure(bg = 'black')
+   if "/2/" in boatSquares:
+      buttonA2.configure(bg = 'black')
+   if "/3/" in boatSquares:
+      buttonA3.configure(bg = 'black')
+   if "/4/" in boatSquares:
+      buttonA4.configure(bg = 'black')
+   if "/5/" in boatSquares:
+      buttonA5.configure(bg = 'black')
+   if "/6/" in boatSquares:
+      buttonA6.configure(bg = 'black')
+   if "/7/" in boatSquares:
+      buttonA7.configure(bg = 'black')
+   if "/8/" in boatSquares:
+      buttonA8.configure(bg = 'black')
+   if "/9/" in boatSquares:
+      buttonA9.configure(bg = 'black')
+   if "/10/" in boatSquares:
+      buttonA10.configure(bg = 'black')
+   if "/11/" in boatSquares:
+      buttonB1.configure(bg = 'black')
+   if "/12/" in boatSquares:
+      buttonB2.configure(bg = 'black')
+   if "/13/" in boatSquares:
+      buttonB3.configure(bg = 'black')
+   if "/14/" in boatSquares:
+      buttonB4.configure(bg = 'black')
+   if "/15/" in boatSquares:
+      buttonB5.configure(bg = 'black')
+   if "/16/" in boatSquares:
+      buttonB6.configure(bg = 'black')
+   if "/17/" in boatSquares:
+      buttonB7.configure(bg = 'black')
+   if "/18/" in boatSquares:
+      buttonB8.configure(bg = 'black')
+   if "/19/" in boatSquares:
+      buttonB9.configure(bg = 'black')
+   if "/20/" in boatSquares:
+      buttonB10.configure(bg = 'black')
+   if "/21/" in boatSquares:
+      buttonC1.configure(bg = 'black')
+   if "/22/" in boatSquares:
+      buttonC2.configure(bg = 'black')
+   if "/23/" in boatSquares:
+      buttonC3.configure(bg = 'black')
+   if "/24/" in boatSquares:
+      buttonC4.configure(bg = 'black')
+   if "/25/" in boatSquares:
+      buttonC5.configure(bg = 'black')
+   if "/26/" in boatSquares:
+      buttonC6.configure(bg = 'black')
+   if "/27/" in boatSquares:
+      buttonC7.configure(bg = 'black')
+   if "/28/" in boatSquares:
+      buttonC8.configure(bg = 'black')
+   if "/29/" in boatSquares:
+      buttonC9.configure(bg = 'black')
+   if "/30/" in boatSquares:
+      buttonC10.configure(bg = 'black')
+   if "/31/" in boatSquares:
+      buttonD1.configure(bg = 'black')
+   if "/32/" in boatSquares:
+      buttonD2.configure(bg = 'black')
+   if "/33/" in boatSquares:
+      buttonD3.configure(bg = 'black')
+   if "/34/" in boatSquares:
+      buttonD4.configure(bg = 'black')
+   if "/35/" in boatSquares:
+      buttonD5.configure(bg = 'black')
+   if "/36/" in boatSquares:
+      buttonD6.configure(bg = 'black')
+   if "/37/" in boatSquares:
+      buttonD7.configure(bg = 'black')
+   if "/38/" in boatSquares:
+      buttonD8.configure(bg = 'black')
+   if "/39/" in boatSquares:
+      buttonD9.configure(bg = 'black')
+   if "/40/" in boatSquares:
+      buttonD10.configure(bg = 'black')
+   if "/41/" in boatSquares:
+      buttonE1.configure(bg = 'black')
+   if "/42/" in boatSquares:
+      buttonE2.configure(bg = 'black')
+   if "/43/" in boatSquares:
+      buttonE3.configure(bg = 'black')
+   if "/44/" in boatSquares:
+      buttonE4.configure(bg = 'black')
+   if "/45/" in boatSquares:
+      buttonE5.configure(bg = 'black')
+   if "/46/" in boatSquares:
+      buttonE6.configure(bg = 'black')
+   if "/47/" in boatSquares:
+      buttonE7.configure(bg = 'black')
+   if "/48/" in boatSquares:
+      buttonE8.configure(bg = 'black')
+   if "/49/" in boatSquares:
+      buttonE9.configure(bg = 'black')
+   if "/50/" in boatSquares:
+      buttonE10.configure(bg = 'black')
+   if "/51/" in boatSquares:
+      buttonF1.configure(bg = 'black')
+   if "/52/" in boatSquares:
+      buttonF2.configure(bg = 'black')
+   if "/53/" in boatSquares:
+      buttonF3.configure(bg = 'black')
+   if "/54/" in boatSquares:
+      buttonF4.configure(bg = 'black')
+   if "/55/" in boatSquares:
+      buttonF5.configure(bg = 'black')
+   if "/56/" in boatSquares:
+      buttonF6.configure(bg = 'black')
+   if "/57/" in boatSquares:
+      buttonF7.configure(bg = 'black')
+   if "/58/" in boatSquares:
+      buttonF8.configure(bg = 'black')
+   if "/59/" in boatSquares:
+      buttonF9.configure(bg = 'black')
+   if "/60/" in boatSquares:
+      buttonF10.configure(bg = 'black')
+   if "/61/" in boatSquares:
+      buttonG1.configure(bg = 'black')
+   if "/62/" in boatSquares:
+      buttonG2.configure(bg = 'black')
+   if "/63/" in boatSquares:
+      buttonG3.configure(bg = 'black')
+   if "/64/" in boatSquares:
+      buttonG4.configure(bg = 'black')
+   if "/65/" in boatSquares:
+      buttonG5.configure(bg = 'black')
+   if "/66/" in boatSquares:
+      buttonG6.configure(bg = 'black')
+   if "/67/" in boatSquares:
+      buttonG7.configure(bg = 'black')
+   if "/68/" in boatSquares:
+      buttonG8.configure(bg = 'black')
+   if "/69/" in boatSquares:
+      buttonG9.configure(bg = 'black')
+   if "/70/" in boatSquares:
+      buttonG10.configure(bg = 'black')
+   if "/71/" in boatSquares:
+      buttonH1.configure(bg = 'black')
+   if "/72/" in boatSquares:
+      buttonH2.configure(bg = 'black')
+   if "/73/" in boatSquares:
+      buttonH3.configure(bg = 'black')
+   if "/74/" in boatSquares:
+      buttonH4.configure(bg = 'black')
+   if "/75/" in boatSquares:
+      buttonH5.configure(bg = 'black')
+   if "/76/" in boatSquares:
+      buttonH6.configure(bg = 'black')
+   if "/77/" in boatSquares:
+      buttonH7.configure(bg = 'black')
+   if "/78/" in boatSquares:
+      buttonH8.configure(bg = 'black')
+   if "/79/" in boatSquares:
+      buttonH9.configure(bg = 'black')
+   if "/80/" in boatSquares:
+      buttonH10.configure(bg = 'black')
+   if "/81/" in boatSquares:
+      buttonI1.configure(bg = 'black')
+   if "/82/" in boatSquares:
+      buttonI2.configure(bg = 'black')
+   if "/83/" in boatSquares:
+      buttonI3.configure(bg = 'black')
+   if "/84/" in boatSquares:
+      buttonI4.configure(bg = 'black')
+   if "/85/" in boatSquares:
+      buttonI5.configure(bg = 'black')
+   if "/86/" in boatSquares:
+      buttonI6.configure(bg = 'black')
+   if "/87/" in boatSquares:
+      buttonI7.configure(bg = 'black')
+   if "/88/" in boatSquares:
+      buttonI8.configure(bg = 'black')
+   if "/89/" in boatSquares:
+      buttonI9.configure(bg = 'black')
+   if "/90/" in boatSquares:
+      buttonI10.configure(bg = 'black')
+   if "/91/" in boatSquares:
+      buttonJ1.configure(bg = 'black')
+   if "/92/" in boatSquares:
+      buttonJ2.configure(bg = 'black')
+   if "/93/" in boatSquares:
+      buttonJ3.configure(bg = 'black')
+   if "/94/" in boatSquares:
+      buttonJ4.configure(bg = 'black')
+   if "/95/" in boatSquares:
+      buttonJ5.configure(bg = 'black')
+   if "/96/" in boatSquares:
+      buttonJ6.configure(bg = 'black')
+   if "/97/" in boatSquares:
+      buttonJ7.configure(bg = 'black')
+   if "/98/" in boatSquares:
+      buttonJ8.configure(bg = 'black')
+   if "/99/" in boatSquares:
+      buttonJ9.configure(bg = 'black')
+   if "/100/" in boatSquares:
+      buttonJ10.configure(bg = 'black')
+   
 #==================================================================================================================================================================
 # Description : Indique à l'utilisateur quoi faire.
 # Entrée : le caractéristiques d'un bateau.
 # Sortie : Label, avec la consigne écrite, sur le canvas
 #==================================================================================================================================================================
-
 def consigne():
    global label3
    global numDeCases
@@ -330,12 +665,15 @@ def consigne():
       numDeCases = 2
       caseMaxChiffre = "9"
       caseMaxLettre = "I"
-   if whichBoat >= 1 or whichBoat <= 5:
+   if whichBoat == 1:
       label3 = Label(mainCanvas)
+   if whichBoat >= 1 and whichBoat <= 5:
       label3.pack()
       label3.destroy()
-      label3 = Label(mainCanvas, text = ("Veuillez placer votre", nomBateaux, ". Il fait", numDeCases, "cases, il doit commencer avant les cases", caseMaxChiffre, "en horizontal et avant les cases", caseMaxLettre, "en vertical."), bg = "red")
+      label3 = Label(mainCanvas, text = ("Veuillez placer votre", nomBateaux, ". Il fait", numDeCases, "cases, il doit commencer avant les cases", caseMaxChiffre, "en horizontal et avant les cases", caseMaxLettre, "en vertical."), bg = "yellow")
       label3.pack(side = 'top', padx = 200, pady = 5)
+   if whichBoat == 6:
+      label3.destroy()
    whichBoat = whichBoat + 1
 
 
