@@ -1,5 +1,4 @@
 from tkinter import*
-from time import sleep
 
 #==================================================================================================================================================================
 # Description : Ouvre la page d'accueil du jeu.
@@ -369,7 +368,7 @@ def bateauxJoueur():
    middleFrame.pack(side = 'bottom', padx = 50, pady = 50)
    label1 = Label(mainCanvas, text = "Veuillez placer vos bateaux.", bg = "yellow")
    label1.pack(side = 'top', padx = 200, pady = 5)
-   label2 = Label(mainCanvas, text = "Pour chaque bateaux, choissisez d'abord le sens puis cliquez sur la case sur laquelle le bateaux débutera.", bg = "yellow")
+   label2 = Label(mainCanvas, text = "Pour chaque bateau, choissisez d'abord le sens puis cliquez sur la case qui correspond à la proue du bateau.", bg = "yellow")
    label2.pack(side = 'top', padx = 200, pady = 5)
    horizontal = Button(mainCanvas, text = "Horizontal", command=sensHorizontal)
    horizontal.pack(side = 'top', padx = 200, pady = 5)
@@ -656,7 +655,7 @@ def consigne():
       caseMaxChiffre = "8"
       caseMaxLettre = "H"
    if whichBoat == 4:
-      nomBateaux = "sousmarin"
+      nomBateaux = "sous-marin"
       numDeCases = 3
       caseMaxChiffre = "8"
       caseMaxLettre = "H"
@@ -670,7 +669,7 @@ def consigne():
    if whichBoat >= 1 and whichBoat <= 5:
       label3.pack()
       label3.destroy()
-      label3 = Label(mainCanvas, text = ("Veuillez placer votre", nomBateaux, ". Il fait", numDeCases, "cases, il doit commencer avant les cases", caseMaxChiffre, "en horizontal et avant les cases", caseMaxLettre, "en vertical."), bg = "yellow")
+      label3 = Label(mainCanvas, text = ("Veuillez placer votre", nomBateaux, ". Il occupe", numDeCases, "cases, il doit commencer avant les cases", caseMaxChiffre, "en horizontal et avant les cases", caseMaxLettre, "en vertical."), bg = "yellow")
       label3.pack(side = 'top', padx = 200, pady = 5)
    if whichBoat == 6:
       label3.destroy()
