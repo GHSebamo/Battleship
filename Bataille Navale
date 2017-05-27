@@ -1,4 +1,5 @@
 from tkinter import*
+from random import*
 
 #==================================================================================================================================================================
 # Description : Ouvre la page d'accueil du jeu.
@@ -675,6 +676,40 @@ def consigne():
       label3.destroy()
    whichBoat = whichBoat + 1
 
+#==================================================================================================================================================================
+# Description : Place les bateaux de l'ordinateur.
+# Entrée : la longueur de chaque bateau et la case sur laquelle il peut commencer sans sortir de la grille.
+# Sortie : Une variable string avec les numéros des cases des bateaux.
+#==================================================================================================================================================================
+def placement_bateau(longueur, début_max):
+   global coordonnés
+   coordonnés = str()                           
+   x = randint(0, début_max)
+   y = randint(0, début_max)                   
+   sens = randint(0, 1)
+   case_bateau = "/" + str(x) + str(y) + "/"
+   if sens == 0:
+      for loop in range(longueur):
+         coordonnés = coordonnés + case_bateau
+         x = x + 1
+         case_bateau = "/" + str(x) + str(y) + "/"
+   if sens == 1:
+      for loop in range(longueur):
+         coordonnés = coordonnés + case_bateau
+         y = y + 1
+         case_bateau = "/" + str(x) + str(y) + "/"
+
 
 fenetre = Tk()
 homePage()
+placement_bateau(5, 5)
+coordonnés_porte_avions = coordonnés
+placement_bateau(4, 6)
+coordonnés_croiseur = coordonnés
+placement_bateau(3, 7)
+coordonnés_contre_torpilleurs = coordonnés
+placement_bateau(3, 7)
+coordonnés_sous_marin = coordonnés
+placement_bateau(2, 8)
+coordonnés_torpilleur = coordonnés
+coordonnés_bateaux = coordonnés_porte_avions + coordonnés_croiseur + coordonnés_contre_torpilleurs + coordonnés_sous_marin + coordonnés_torpilleur
